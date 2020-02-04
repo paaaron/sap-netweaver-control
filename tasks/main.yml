@@ -1,0 +1,9 @@
+---
+
+- name: Start, stop or restart SAP Netweaver
+  shell: |
+      sapcontrol -nr {{ sap_netweaver_control_instance_nr }} -function {{ sap_netweaver_control_function }}System
+  become: yes
+  become_user: "{{ sap_netweaver_control_sid | lower}}adm"
+  register: controlfunction
+  changed_when:"'OK' in controlfunction.stdout"

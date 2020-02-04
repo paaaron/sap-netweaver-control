@@ -12,8 +12,9 @@ This role is to be executed on a server where a SAP Netweaver based application 
 
 | variable | info | required? |
 |:--------:|:----:|:---------:|
+|sap_netweaver_control_sid|SID of the SAP system|yes|
 |sap_netweaver_control_instance_nr|Instance number of the system on which we want to operate|yes|
-|sap_netweaver_control_function|Function that we want to execute|yes, `start,` `stop` or `restart`|
+|sap_netweaver_control_function|Function that we want to execute|yes, `Start,` `Stop` or `Restart`|
 
 ## Dependencies
 This role has no dependencies
@@ -29,6 +30,7 @@ This role has no dependencies
 ## Example Inventory
 
 ```yaml
+sap_netweaver_control_sid: "RH1"
 sap_netweaver_control_instance_nr: "00"
 sap_netweaver_control_function: "start"
 ```
