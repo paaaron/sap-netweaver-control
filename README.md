@@ -1,6 +1,6 @@
 # This repo is still WIP and not ready to be used!!!
 
-# sap-netweaver-controlnetweaver-control [![Build Status](https://travis-ci.com/redhat-sap/sap-netweaver-control.svg?branch=master)](https://travis-ci.com/redhat-sap/sap-netweaver-control)
+# sap-netweaver-control [![Build Status](https://travis-ci.com/redhat-sap/sap-netweaver-control.svg?branch=master)](https://travis-ci.com/redhat-sap/sap-netweaver-control)
 
 This role contains control operations for SAP Netweaver based applications (start, stop and restart)
 
